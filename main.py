@@ -50,7 +50,7 @@ def is_it_worth(annual_cost, classes_total):
     cost_total = ((skipped / classes_total) * (annual_cost / 2)) + int(cost_of_event)
     event_value = value_calc(int(value_score))
     print(f"Your total event cost will be: ${cost_total:.2f}")
-    print(f"Your total event value will be: ${event_value:.2f}")
+    print(f"Your percieved event value will be: ${event_value:.2f}")
     if cost_total -20 <= event_value and  event_value <= cost_total + 20:
         print("Values are similiar, the choice is up to you.")
     elif event_value >= cost_total:
@@ -75,12 +75,12 @@ def main():
         print("Cost per day: 3")
         print("Cost per credit: 4")
         print('Cost per class: 5')
-        print('Is it worth it?: 6')
         print("Quit: Q")
+        print('Is it worth it?: 6')
+      
 
         choice = input("Choose an option: ")
-        if choice == 'Q':
-             break
+    
         if choice == '1':
             print(f"One semester costs: ${cost_per_semester(annual_cost):.2f}")
         if choice == '2':
@@ -91,6 +91,8 @@ def main():
             print(f"One credit costs: ${cost_per_credit(annual_cost, credits):.2f}")
         if choice == '5':
             print(f"One class costs: ${cost_per_class(annual_cost, credits):.2f}")
+        if choice == 'Q':
+                     break
         if choice == '6':
             is_it_worth(annual_cost, classes_total)
         else:

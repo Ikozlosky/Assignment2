@@ -1,14 +1,14 @@
-Status : COMPLETE - all checks passed
-Points : 40 / 40  (from check.py; counts only when the Git and GitHub checks pass)
+Status : INCOMPLETE - at least one check did not pass
+Points : 39 / 40  (from check.py; counts only when the Git and GitHub checks pass)
 
 CS 1430 Assignment 2: The Cost of College
-GitHub user : Ikozlosky
-Repository  : https://github.com/Ikozlosky/Assignment2
-Commit      : 607d880f3b6fce6e62dbed01154e681bd6ee5f60
-Message     : I finished the assingment
-Author      : Ilias Kozlosky <kozloskyi@uwplatt.edu>
-Committed   : 2026-10-29T16:00:05-05:00
-Checked     : 2026-10-29 16:00:25 Central Daylight Time
+GitHub user : unknown
+Repository  : unknown
+Commit      : unknown
+Message     : 
+Author      : 
+Committed   : 
+Checked     : 2026-10-29 18:16:37 Central Daylight Time
 Python      : 3.14.8
 
 ================================================================
@@ -31,35 +31,32 @@ CHECK RESULTS
 
 --- Your program (10 points) ---
 [PASS] The menu runs from start to Q without an error  (5/5 pts)
-[PASS] Options 1 to 5 print all five amounts  (5/5 pts)
+[FAIL] Options 1 to 5 print all five amounts  (4/5 pts)
+   > Test 1 of 3 (Example A): with cost 14601 and 15 credits, these amounts were not found in output:
+   >     7300.50  (from cost_per_semester)
+   > Each amount must be printed with exactly two decimals, like 97.34.
+   > check.py types: cost, credits, 1, 2, 3, 4, 5, Q.
 
 --- Git and GitHub (required for your points to count) ---
 [PASS] Git is installed
 [PASS] This folder is a Git repository
 [PASS] You have committed your own work
-[PASS] Your latest changes are committed
-[PASS] Your repo is connected to GitHub
-[PASS] Your commit is pushed to GitHub
+[FAIL] Your latest changes are committed
+   > main.py has changes that are not committed yet.
+   > Save, then Commit in Source Control, so GitHub has what check.py tested.
 
-POINTS FROM check.py: 40 / 40
+POINTS FROM check.py: 39 / 40
 
 ================================================================
 PROGRAM OUTPUT  (typed: 14601, 15, 1, 2, 3, 4, 5, Q)
 ================================================================
-Total cost for one year: $Credits this semester: Cost per semester: 1
+Total cost for one year: $Credits this semester: How many classes per week? (two hour labs/lectures count as two) Cost per semester: 1
 Cost per month: 2
 Cost per day: 3
 Cost per credit: 4
 Cost per class: 5
 Quit: Q
-Choose an option: One semester costs: $7300.50
-Invalid option
-Cost per semester: 1
-Cost per month: 2
-Cost per day: 3
-Cost per credit: 4
-Cost per class: 5
-Quit: Q
+Is it worth it?: 6
 Choose an option: One month costs: $1622.33
 Invalid option
 Cost per semester: 1
@@ -68,6 +65,7 @@ Cost per day: 3
 Cost per credit: 4
 Cost per class: 5
 Quit: Q
+Is it worth it?: 6
 Choose an option: One class day costs: $97.34
 Invalid option
 Cost per semester: 1
@@ -76,6 +74,7 @@ Cost per day: 3
 Cost per credit: 4
 Cost per class: 5
 Quit: Q
+Is it worth it?: 6
 Choose an option: One credit costs: $486.70
 Invalid option
 Cost per semester: 1
@@ -84,11 +83,14 @@ Cost per day: 3
 Cost per credit: 4
 Cost per class: 5
 Quit: Q
+Is it worth it?: 6
 Choose an option: One class costs: $32.45
+Invalid option
 Cost per semester: 1
 Cost per month: 2
 Cost per day: 3
 Cost per credit: 4
 Cost per class: 5
 Quit: Q
+Is it worth it?: 6
 Choose an option:
